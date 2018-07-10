@@ -15,15 +15,15 @@
 		'<div class="fileName">' +
 			'<h3 title="{{name}}" class="ellipsis">{{name}}</h3>' +
 			'<a class="permalink" href="{{permalink}}" title="{{permalinkTitle}}">' +
-				'<span class="icon icon-public"></span>' +
-				'<span class="hidden-visually">{{permalinkTitle}}</span>' +
+				//'<span class="icon icon-public"></span>' +
+				//'<span class="hidden-visually">{{permalinkTitle}}</span>' +
 			'</a>' +
 		'</div>' +
 		'	<div class="file-details ellipsis">' +
-		'		<a href="#" ' +
-		'		class="action action-favorite favorite">' +
-		'			<img class="svg" alt="{{starAltText}}" src="{{starIcon}}" />' +
-		'		</a>' +
+		//'		<a href="#" ' +
+		//'		class="action action-favorite favorite">' +
+		//'			<img class="svg" alt="{{starAltText}}" src="{{starIcon}}" />' +
+		//'		</a>' +
 		'		{{#if hasSize}}<span class="size" title="{{altSize}}">{{size}}</span>, {{/if}}<span class="date" title="{{altDate}}">{{date}}</span>' +
 		'	</div>' +
 		'</div>' +
@@ -174,7 +174,7 @@
 		loadPreview: function(path, mime, etag, $iconDiv, $container, isImage) {
 			var maxImageWidth  = $container.parent().width() + 50;  // 50px for negative margins
 			var maxImageHeight = maxImageWidth / (16/9);
-			var smallPreviewSize = 75;
+			var smallPreviewSize = 50;
 
 			var isLandscape = function(img) {
 				return img.width > (img.height * 1.2);

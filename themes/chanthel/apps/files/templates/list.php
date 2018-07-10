@@ -1,3 +1,4 @@
+
 <div id="controls">
 		<div class="actions creatable hidden">
 			<div id="uploadprogresswrapper">
@@ -62,7 +63,7 @@
 			</th>
 			<th id="headerDate" class="hidden column-mtime">
 				<a id="modified" class="columntitle" data-sort="mtime"><span><?php p($l->t( 'Modified' )); ?></span><span class="sort-indicator"></span></a>
-					<span class="selectedActions"><a href="" class="delete-selected" style="padding-right: 8px;">
+					<span class="selectedActions" style="margin-right:70%"><a href="" class="delete-selected" style="padding-right: 8px;">
 						<!--CUSTOMIZED BY 247-->
 						<!--<span><?php p($l->t('Delete'))?></span>-->
 						<span class="icon icon-delete"></span>

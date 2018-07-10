@@ -32,6 +32,7 @@
 		<?php print_unescaped($_['headers']); ?>
 	</head>
 	<body id="<?php p($_['bodyid']);?>">
+	<div id="cover"></div>
 	<?php include('layout.noscript.warning.php'); ?>
 	<div id="notification-container">
 		<div id="notification"></div>

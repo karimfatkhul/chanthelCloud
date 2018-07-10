@@ -32,7 +32,7 @@
 /*CUSTOMIZED BY 247*/
 #app-navigation .nav-systemtagsfilter.active .nav-icon-systemtagsfilter {
 	background-image: none;
-	background: url('../img/tag.svg') #EEEEEE;
+	background: url('../img/tag.svg') transparent;
 	padding-left: 44px;
     	background-size: 16px 16px;
     	background-position: 14px center;

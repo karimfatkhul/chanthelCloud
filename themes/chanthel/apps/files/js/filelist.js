@@ -11,9 +11,10 @@
 (function() {
 
 	var TEMPLATE_ADDBUTTON = '<a href="#" class="button new">' +
-		'<span class="icon {{iconClass}}"></span>' +
+		'<span >Add New</span>' +
 		'<span class="hidden-visually">{{addText}}</span>' +
 		'</a>';
+
 
 	/**
 	 * @class OCA.Files.FileList
@@ -1177,7 +1178,7 @@
 
 			td = $('<td></td>').attr({
 				"class": "filesize",
-				"style": 'color:rgb(' + sizeColor + ',' + sizeColor + ',' + sizeColor + ')'
+				//"style": 'color:rgb(' + sizeColor + ',' + sizeColor + ',' + sizeColor + ')'
 			}).text(simpleSize);
 			tr.append(td);
 
@@ -1201,7 +1202,7 @@
 			td.append($('<span></span>').attr({
 				"class": "modified",
 				"title": formatted,
-				"style": 'color:rgb('+modifiedColor+','+modifiedColor+','+modifiedColor+')'
+				//"style": 'color:rgb('+modifiedColor+','+modifiedColor+','+modifiedColor+')'
 			}).text(text)
 			  .tooltip({placement: 'top'})
 			);

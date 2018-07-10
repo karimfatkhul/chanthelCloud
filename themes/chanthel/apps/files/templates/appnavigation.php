@@ -1,4 +1,4 @@
-<div id="app-navigation">
+<div id="app-navigation" class="blue-theme">
 	<ul class="with-icon">
 		<?php foreach ($_['navigationItems'] as $item) { ?>
 		<li data-id="<?php p($item['id']) ?>" class="nav-<?php p($item['id']) ?>">
@@ -11,7 +11,7 @@
 	</ul>
 	<div id="app-settings">
 		<div id="app-settings-header">
-			<button class="settings-button" ><!--data-apps-slide-toggle="#app-settings-content"--!>
+			<button class="settings-button" >
 				<?php p($l->t('Settings'));?>
 			</button>
 		</div>
@@ -26,3 +26,4 @@
 		</div>
 	</div>
 </div>
+<!--data-apps-slide-toggle="#app-settings-content"-->

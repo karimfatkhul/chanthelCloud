@@ -8,7 +8,7 @@
 	font-family: "Lucida Grande", Arial, Verdana, sans-serif;
 }
 .ui-widget-content {
-	border: 1px solid #dddddd;
+	border: none;
 	background: #eeeeee url('images/ui-bg_highlight-soft_100_eeeeee_1x100.png') 50% top repeat-x;
 	color: #333333;
 }
@@ -16,8 +16,8 @@
 	color: #333333;
 }
 .ui-widget-header {
-	border: 1px solid #1d2d44;
-	background: #1d2d44 url('images/ui-bg_flat_35_1d2d44_40x100.png') 50% 50% repeat-x;
+	border: 1px solid #27AE60;
+	background: #27AE60 url('images/ui_bg_flat_01.png') 50% 50% repeat-x;
 	color: #ffffff;
 }
 .ui-widget-header a {
