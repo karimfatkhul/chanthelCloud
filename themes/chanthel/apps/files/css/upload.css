@@ -34,8 +34,8 @@
 #uploadprogresswrapper {
 	display: inline-block;
 	vertical-align: top;
-	height: 36px;
-	margin-left: 3px;
+	height: 33px;
+	margin-left: 10px;
 }
 #uploadprogresswrapper > input[type='button'] {
 	height: 36px;
@@ -44,8 +44,8 @@
 #uploadprogressbar {
 	position:relative;
 	float: left;
-	width: 500px;
-	height: 36px;
+	width: 300px;
+	height: 33px;
 	display:inline-block;
 	text-align: center;
 }
@@ -120,8 +120,8 @@
 	width: 230px;
 }
 .oc-dialog .fileexists th label {
-	font-weight: normal;
-	color:black;
+	font-weight: 600;
+	color:#5b5b5c;
 }
 .oc-dialog .fileexists th .count {
 	margin-left: 3px;
@@ -137,6 +137,7 @@
 	color:#777;
 	word-break: break-all;
 	clear: left;
+	margin: 10px 0;
 }
 .oc-dialog .fileexists .icon {
 	width: 64px;
@@ -174,7 +175,7 @@
 }
 .oc-dialog .oc-dialog-buttonrow {
 	width:100%;
-	text-align:right;
+	float:right;
 }
 .oc-dialog .oc-dialog-buttonrow .cancel {
 	float:left;

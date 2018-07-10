@@ -289,6 +289,21 @@ textarea:disabled {
 	color: #999;
 	cursor: default;
 }
+.oc-dialog-buttonrow button.continue:disabled{
+	background-color: rgba(35, 102, 184,0.5)!important;
+    	color: white !important;
+    	cursor: default;
+}
+.oc-dialog-buttonrow button.continue {
+    	background-color:  rgba(35, 102, 184,1) !important;
+    	font-weight: 600;
+    	color: #fff !important;}
+.oc-dialog-buttonrow button.continue:disabled:hover {
+	background-color: rgba(35, 102, 184,0.5)!important;
+}
+.oc-dialog-buttonrow button.continue:hover {
+    	background-color:  #1f59a0 !important;
+}
 input:disabled+label, input:disabled:hover+label, input:disabled:focus+label {
 	color: #999 !important;
 	cursor: default;

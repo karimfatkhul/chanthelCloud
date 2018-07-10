@@ -43,24 +43,24 @@
 	/*background-color: #333;*/
 	/*background-color: #428bca;*/
 	box-sizing: border-box;
-	box-shadow: 1px 1px 13px 0px #f6f6f6;
+	/*box-shadow: 1px 1px 13px 0px #f6f6f6;*/
 }
 
 
 
 /* LOGO and APP NAME -------------------------------------------------------- */
-/*CUSTOMIZED BY 247*/
+/*CUSTOMIZED BY 247 for Blue Theme*/
 #owncloud {
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 15px 10px 0 45px;
-  	padding-bottom: 0;
   	height: 65px;
 	box-sizing: border-box;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	opacity: 1;
 	width: 250px;
+	padding: 15px 100px 0px;
+	background: #2366b8;
 }
 #owncloud:focus {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
@@ -74,7 +74,7 @@
 
 /*CUSTOMIZED BY 247*/
 #header .logo {
-	background-image: url('../img/logo-icon.svg');
+	background-image: url('../img/logo-icon.old.svg');
 	background-repeat: no-repeat;
 	background-size: 195px;
 	background-position: center 30px;
@@ -90,8 +90,8 @@
 	/*background-image: url(../img/logo-icon-white.svg);*/
 	background-image: url(../img/logo-icon.svg);
 	background-repeat: no-repeat;
-	width: 145px;
-	height: 30px;
+	width: 100%;
+	height: 80%;
 }
 
 /*CUSTOMIZED BY 247*/
@@ -109,7 +109,7 @@
 .header-appname-container .header-appname,
 .menutoggle .icon-caret {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
-	opacity: .75;
+	opacity: 1;
 }
 .menutoggle:hover .header-appname,
 .menutoggle:hover .icon-caret,
@@ -127,8 +127,8 @@
 	display: inline-block;
 	position: relative;
 	color: #5B5B5C;
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 20px;
+    	font-weight: 500;	
 	margin: 0;
 	margin-top: -24px;
 	padding: 7px 0 7px 5px;

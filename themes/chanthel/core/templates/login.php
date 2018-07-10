@@ -38,6 +38,17 @@ script('core', [
 			<!-- the following div ensures that the spinner is always inside the #message div -->
 			<div style="clear: both;"></div>
 		</div>
+
+		<?php if (!empty($_['invalidpassword']) && !empty($_['canResetPassword'])) { ?>
+		<a id="lost-password" class="warning" href="<?php p($_['resetPasswordLink']); ?>">
+			<?php p($l->t('Wrong password. Reset it?')); ?>
+		</a>
+		<?php } else if (!empty($_['invalidpassword'])) { ?>
+			<p class="warning">
+				<?php p($l->t('Wrong password.')); ?>
+			</p>
+		<?php } ?>
+
 		<p class="grouptop">
 			<input type="text" name="user" id="user"
 				placeholder="<?php p($l->t('Username or email')); ?>"
@@ -53,18 +64,16 @@ script('core', [
 				<?php p($_['user_autofocus'] ? '' : 'autofocus'); ?>
 				autocomplete="on" autocapitalize="off" autocorrect="off" required>
 			<label for="password" class="infield"><?php p($l->t('Password')); ?></label>
-			<input type="submit" id="submit" class="login primary icon-confirm svg" title="<?php p($l->t('Log in')); ?>" value="" disabled="disabled"/>
+			<!--<input type="submit" id="submit" class="login primary icon-confirm svg" title="<?php p($l->t('Log in')); ?>" value="" disabled="disabled"/>-->
 		</p>
-
-		<?php if (!empty($_['invalidpassword']) && !empty($_['canResetPassword'])) { ?>
-		<a id="lost-password" class="warning" href="<?php p($_['resetPasswordLink']); ?>">
-			<?php p($l->t('Wrong password. Reset it?')); ?>
-		</a>
-		<?php } else if (!empty($_['invalidpassword'])) { ?>
-			<p class="warning">
-				<?php p($l->t('Wrong password.')); ?>
-			</p>
-		<?php } ?>
+		<p class="groupbottom">
+			<p style="margin-bottom: 15px;margin-left: 5px; font-weight: 600; cursor: pointer;color: #607D8B; display:inline-block">Remember Me</p>
+			<p style="margin-bottom: 15px;margin-right: 5px; float: right; font-weight: 600; cursor: pointer;color: #607D8B; display:inline-block">Forgot Password?</p>
+		</p>
+		
+		<p class="groupbottom" style="text-align:center; margin-top:20px">
+			<button type="submit" id="submit" class="login primary" title="<?php p($l->t('Log in')); ?>" value="">Log in</button>
+		</p>
 		<?php if ($_['rememberLoginAllowed'] === true) : ?>
 		<div class="remember-login-container">
 			<?php if ($_['rememberLoginState'] === 0) { ?>

@@ -18,7 +18,7 @@
 			'{{#if iconClass}}<span class="icon {{iconClass}}" />{{/if}}' +
 			'{{#unless hasDisplayName}}<span class="hidden-visually">{{altText}}</span>{{/unless}}' +
 		'{{/if}}' +
-		'{{#if displayName}}<span> {{displayName}}</span>{{/if}}' +
+		'{{#if displayName}}<span>{{displayName}}</span>{{/if}}' +
 		'</a>';
 
 	/**
@@ -644,8 +644,21 @@
 					if((context.$file.data('permissions') & OC.PERMISSION_DELETE) === 0) {
 						return;
 					}
-					context.fileList.do_delete(fileName, context.dir);
-					$('.tipsy').remove();
+					//context.fileList.do_delete(fileName, context.dir);
+					//$('.tipsy').remove();
+					   document.getElementById("cover").style.display = "block";
+					   OC.dialogs.confirm('Are you sure you want to delete this file?', 'Deletion confirm',
+                				function(res){
+                    					if (res){
+							
+                        				context.fileList.do_delete(fileName, context.dir);
+                        				$('.tipsy').remove();
+							document.getElementById("cover").style.display = "none";
+                    					}
+						document.getElementById("cover").style.display = "none";
+                				}
+             				);
+
 				}
 			});
 

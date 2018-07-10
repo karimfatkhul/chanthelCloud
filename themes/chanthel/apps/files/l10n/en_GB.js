@@ -20,7 +20,7 @@ OC.L10N.register(
     "Upload failed. Could not get file info." : "Upload failed. Could not get file info.",
     "Invalid directory." : "Invalid directory.",
     "Files" : "Files",
-    "All files" : "All files",
+    "All files" : "Documents",
     "File could not be found" : "File could not be found",
     "Home" : "Home",
     "Close" : "Close",

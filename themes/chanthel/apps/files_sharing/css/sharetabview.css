@@ -16,6 +16,10 @@
 
 .shareTabView label {
 	white-space: nowrap;
+	line-height: 30px;
+}
+div#allowPublicUploadWrapper{
+	margin-top:5px;
 }
 
 .shareTabView input[type="checkbox"] {
@@ -29,7 +33,8 @@
 	margin-left: 0;
 }
 .shareTabView input[type="text"].shareWithField {
-	width: 80%;
+	width: 94%;
+    	min-height: 24px;
 }
 
 .shareTabView form {

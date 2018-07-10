@@ -28,9 +28,9 @@
 .nav-trashbin {
   position: fixed !important;
   bottom: 65px;
-  background-color: #fafafa;
+  background-color: #2366b8;
   border-right: 1px solid transparent;
-  width: 18% !important;
+  width: 210px !important;
 }
 /* double padding to account for Deleted files entry, issue with Firefox */
 .app-files #app-navigation > ul li:nth-last-child(2) {

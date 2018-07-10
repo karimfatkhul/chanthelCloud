@@ -109,7 +109,7 @@
 				$crumb.attr('data-dir', part.dir);
 
 				if (part.img) {
-					$image = $('<img class="svg"></img>');
+					$image = $('<img class="svg" style="display:none">Home</img>');
 					$image.attr('src', part.img);
 					$image.attr('alt', part.alt);
 					$link.append($image);

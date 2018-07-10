@@ -2,14 +2,14 @@
  This file is licensed under the Affero General Public License version 3 or later.
  See the COPYING-README file. */
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section { margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; cursor:default; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section { margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-size:14px; font-family:inherit; vertical-align:baseline; cursor:default; }
 html, body { height:100%; }
 article, aside, dialog, figure, footer, header, hgroup, nav, section { display:block; }
 body { line-height:1.5; }
 table { border-collapse:separate; border-spacing:0; white-space:nowrap; }
 caption, th, td { text-align:left; font-weight:normal; }
 table, td, th { vertical-align:middle; }
-a { border:0; color:#000; text-decoration:none;}
+a { border:0; color:#5b5b5c; text-decoration:none;}
 a, a *, input, input *, select, .button span, label { cursor:pointer; }
 ul { list-style:none; }
 
@@ -18,9 +18,13 @@ body {
 	font-weight: 400;
 	font-size: .8em;
 	line-height: 1.6em;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";	
+	font-family: Roboto, "Helvetica Neue";	
 	color: #5b5b5c;
 	height: auto;
+}
+/*BLUE THEME*/
+span.size, span.date{
+	font-size: 12px !important;
 }
 
 #body-login {
@@ -95,31 +99,34 @@ a.two-factor-cancel {
 /*CUSTOMIZED BY 247*/
 .searchbox input[type="search"] {
 	position: relative;
-	font-size: 12px;
-	padding: 3px;
-	padding-left: 25px;
-	background: transparent url('../img/actions/search.svg') no-repeat 6px center;
+	font-size: 14px;
+	padding: 5px 3px;
+	padding-left: 27px;
+	background: #2366b8 url('../img/actions/search-white.svg') no-repeat 6px center;
 	color: #5b5b5c;
 	border: 0;
 	border-radius: 3px;
-	margin-top: 9px;
+	margin-top: 10px;
+	margin-right: 10px;
 	float: right;
 	width: 0;
+	min-height: 20px;
 	cursor: pointer;
 	-webkit-transition: all 100ms;
 	transition: all 100ms;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-	opacity: .7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	opacity: 1;
 }
 .searchbox input[type="search"]:focus,
 .searchbox input[type="search"]:active,
 .searchbox input[type="search"]:valid {
-	color: #5b5b5c;
-	width: 300px;
-	max-width: 50%;
-	cursor: text;
-	background-color: #eeeeee;
-}
+	background: transparent url('../img/actions/search.svg') no-repeat 6px center;
+  	color: #5b5b5c;
+    	width: 200px;
+    	max-width: 50%;
+    	cursor: text;
+    	min-height: 20px;
+    	background-color: #eeeeee;}
 
 /* CONTENT ------------------------------------------------------------------ */
 /*CUSTOMIZED BY 247*/
@@ -133,7 +140,7 @@ a.two-factor-cancel {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background-color: rgba(255, 255, 255, .95);
+	background-color: rgba(255, 255, 255, 1);
 	z-index: 50;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -156,13 +163,28 @@ a.two-factor-cancel {
 #controls input[type='password'],
 #controls select {
 	box-sizing: border-box;
-	display: inline-block;
-	height: 36px;
-	padding: 7px 10px
+    	display: inline-block;
+    	height: 33px;
+    	padding: 7px 10px;
+    	color: white;
+    	font-weight: 400;
+    	border-radius: 4px;}
+#controls .button{
+    	background: #2366b8;}
+input#newusername,input#newuserpassword{
+	color: #5b5b5c !important;
 }
+
+#controls .multiselect.button{
+    	background: white !important;
+	color: #5b5b5c;}
+
 
 #controls .button.hidden {
 	display: none;
+}
+#controls .button:hover{
+	background: #1f59a0;
 }
 
 #content {
@@ -284,18 +306,19 @@ a.two-factor-cancel {
 /* position log in button as confirm icon in right of password field */
 /*CUSTOMIZED BY 247*/
 #body-login #submit.login {
-	position: absolute;
-	right: 0;
-	top: 0;
+	position: inherit;
 	border: none;
-	background-color: #BDBDBD;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-	opacity: .3;
+	background-color: #2366b8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	opacity: 1;
+	width: 50%;
+	min-height: 35px;
 }
 #body-login #submit.login:hover,
 #body-login #submit.login:focus {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-	opacity: .7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	opacity: 1;
+	background-color: #1f59a0;
 }
 #body-login input[type="password"] {
 	padding-right: 40px;
@@ -508,7 +531,7 @@ label.infield {
 	font-size:12px; background:#f8f8f8; color:#888; cursor:pointer;
 	border: 1px solid #ddd;
 }
-#body-login form #selectDbType label.ui-state-hover, #body-login form #selectDbType label.ui-state-active { color:#000; background-color:#e8e8e8; }
+#body-login form #selectDbType label.ui-state-hover, #body-login form #selectDbType label.ui-state-active { color:#5b5b5c; background-color:#e8e8e8; }
 
 
 /* Warnings and errors are the same */
@@ -517,7 +540,7 @@ label.infield {
 #body-login .error {
 	display: block;
 	padding: 10px;
-	background-color: rgba(0,0,0,.3);
+	background-color: #DE4646;
 	color: #fff;
 	text-align: left;
 	border-radius: 3px;
@@ -539,7 +562,7 @@ label.infield {
 /*CUSTOMIZED BY 247*/
 #body-login .v-align {
 	width: inherit;
-	padding-top: 50px;
+	padding-top: 40px;
 }
 
 #body-login .update img.float-spinner {
@@ -596,6 +619,7 @@ label.infield {
 }
 #body-login a.warning {
 	cursor: pointer;
+	margin-bottom: 15px;
 }
 
 /* fixes for update page TODO should be fixed some time in a proper way */
@@ -893,6 +917,8 @@ div.crumb span {
 div.crumb:first-child a {
 	position: relative;
 	top: 13px;
+    	padding: 10px 10px 10px 0;
+    	color: #5b5b5c;
 }
 div.crumb.last {
 	font-weight: 600;
@@ -909,8 +935,8 @@ div.crumb:hover,
 div.crumb:focus,
 div.crumb a:focus,
 div.crumb:active {
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-	opacity:.7;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	opacity:1;
 }
 
 .appear {

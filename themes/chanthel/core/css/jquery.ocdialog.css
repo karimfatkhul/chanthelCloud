@@ -1,6 +1,6 @@
 .oc-dialog {
 	background: white;
-	color: #333333;
+	color: #5b5b5c;
 	border-radius: 3px; box-shadow: 0 0 7px #888888;
 	padding: 15px;
 	z-index: 1000;
@@ -10,11 +10,16 @@
 	box-sizing: border-box;
 	min-width: 200px;
 }
+.oc-dialog span.why, .oc-dialog span.what{
+	line-height: 25px;
+}
 .oc-dialog-title {
 	background: white;
 	font-weight: bold;
-	font-size: 110%;
+	font-size: 16px;
 	margin-bottom: 10px;
+	color: #5b5b5c;
+	text-transform: capitalize;
 }
 .oc-dialog-content {
 	z-index: 1000;
@@ -33,10 +38,15 @@
 }
 /* align primary button to right, other buttons to left */
 .oc-dialog-buttonrow.twobuttons button:nth-child(1) {
-	float: left;
-}
+	float: none;
+    	margin-right: 20px;
+    	min-width: 100px;
+    	min-height: 35px;}
 .oc-dialog-buttonrow.twobuttons button:nth-child(2) {
-	float: right;
+	float: none;
+    	margin-right: 20px;
+    	min-width: 100px;
+    	min-height: 35px;
 }
 
 .oc-dialog-buttonrow.onebutton button {
@@ -52,8 +62,8 @@
 
 .oc-dialog-dim {
 	background-color: #000;
-	opacity: .20;
-	z-index: 999;
+	opacity: .50;
+	z-index: 9999;
 	position: fixed;
 	top: 0; left: 0;
 	width: 100%; height: 100%;

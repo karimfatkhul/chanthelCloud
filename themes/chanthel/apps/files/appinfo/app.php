@@ -58,7 +58,7 @@ $templateManager->registerTemplate('application/vnd.oasis.opendocument.spreadshe
 		'appname' => 'files',
 		'script' => 'list.php',
 		'order' => 0,
-		'name' => $l->t('All files'),
+		'name' => $l->t('Documents'),
 	];
 });
 

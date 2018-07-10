@@ -65,7 +65,8 @@
 
 #shareWithList .shareOption {
 	white-space: nowrap;
-	display: inline-block;
+	display: block;
+	margin-left: 40px;
 }
 
 #shareWithList .unshare img, #shareWithList .showCruds img {
